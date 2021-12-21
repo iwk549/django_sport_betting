@@ -1,0 +1,52 @@
+APPNAME: User
+User
+	ID
+	name
+	email
+	password
+	subscription
+---
+
+APPNAME: Match
+Match
+	ID
+	dateTime
+	homeTeamID
+	awayTeamID
+	sportID
+
+Odds
+	ID
+	matchID
+	homeTeamMoneyLineOdds
+	awayTeamMoneyLineOdds
+	homeTeamSpreadLine
+	awayTeamSpreadLine
+	homeTeamSpreadOdds
+	awayTeamSpreadOdds
+	overUnderLine
+	overOdds
+	underOdds
+
+Prediction
+	ID
+	matchID
+	homeTeamExpectedScore
+	awayTeamExpectedScore
+
+Result
+	ID
+	matchID
+	homeTeamScore
+	awayTeamScore
+	moneyLinePayout
+	spreadPayout
+	overUnderPayout
+Team
+	ID
+	name
+	sportID
+
+Sport
+	ID
+	name
